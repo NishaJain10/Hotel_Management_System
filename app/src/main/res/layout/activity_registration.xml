@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back"
+    android:contextClickable="false"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+<LinearLayout
+    android:layout_width="400dp"
+    android:layout_height="70dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="65dp"
+        android:src="@mipmap/login" />
+
+    <TextView
+        android:layout_width="256dp"
+        android:layout_height="51dp"
+
+        android:layout_marginTop="10dp"
+        android:text="VOYAGABLE"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+</LinearLayout>
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/shapeemail"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Name"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/shapeemail"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Username"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/shapeemail"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white" />
+
+    <LinearLayout
+        android:layout_width="345dp"
+        android:layout_height="54dp"
+        android:background="@drawable/shapeemail"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/question1TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Gender"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/option1RadioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="Male"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/option2RadioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="Female"
+                android:textColor="@color/white" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/registerbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shapesignup"
+        android:padding="15dp"
+        android:shadowColor="@android:color/transparent"
+        android:text="Register"
+        android:textColor="@color/white" />
+</LinearLayout>

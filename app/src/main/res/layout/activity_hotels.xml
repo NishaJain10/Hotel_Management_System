@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/material_dynamic_primary95"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Hotel name -->
+            <TextView
+                android:id="@+id/hotel_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:text="Double Tree"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <RatingBar
+                android:id="@+id/hotel_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-15dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="8dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressTint="@color/ratingStar"
+                android:rating="4.5"
+                android:ratingBarStyleSmall="@style/SmallRatingBar"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:stepSize="0.1" />
+
+            <TextView
+                android:id="@+id/hotel_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="10100 International Dr, Orlando, FL 32821, United States"
+                android:textColor="#005698"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <!-- Horizontal scrollable images -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <!-- Add images dynamically here -->
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="5dp"
+                        android:contentDescription="Hotel Image"
+                        android:src="@drawable/hiltoni" />
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="5dp"
+                        android:contentDescription="Hotel Image"
+                        android:src="@drawable/hiltonii" />
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="5dp"
+                        android:contentDescription="Hotel Image"
+                        android:src="@drawable/hiltoniii" />
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="5dp"
+                        android:contentDescription="Hotel Image"
+                        android:src="@drawable/hiltoniv" />
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:contentDescription="Hotel Image"
+                        android:src="@drawable/hiltonv" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <!-- Text overview of the hotel -->
+            <TextView
+                android:id="@+id/hotel_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:text="Hilton Worldwide Holdings Inc. is an American multinational hospitality company that manages and franchises a broad portfolio of hotels and resorts. Founded by Conrad Hilton in May 1919, the company is now led by Christopher J. Nassetta. Hilton is headquartered in Tysons, Virginia, United States."
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <!-- List of facilities provided -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Facilities"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Restaurants and Bar"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:text="• Comfortable Spaces"
+                        android:textSize="16sp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="• Spa &amp; Swimming Pool"
+                        android:textSize="16sp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Free Parking"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Fitness &amp; Gym"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Free Wifi"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Pet Friendly"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"></TextView>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Business Meeting Rooms"
+                        android:textSize="16sp"></TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Contact"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@android:drawable/ic_menu_call"
+                android:text="Phone No: +1-202-555-0151"
+                android:textColor="@color/black"
+                android:textSize="16sp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@android:drawable/ic_dialog_email"
+                android:text=" Email: orlando@doubleTree.org"
+                android:textSize="17sp"></TextView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/book_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#00B8D4"
+        android:text="Book Room"
+        android:textStyle="bold" />
+</LinearLayout>
